@@ -1,0 +1,342 @@
+{
+  "destinations": [
+    {
+      "id": 0,
+      "name": "Tokyo",
+      "image": "images/tokyo.jpg",
+      "elevation": 1233,
+      "featured": false,
+      "description": "Simply setting foot in Japan's cosmopolitan capital is an experience within itself. A city known for its bustling streets and flashing neon signs, Tokyo has an electric energy and plenty of attractions to discover. Foodies won't be let down by the city's fresh sushi and hearty ramen. Budding photographers and adrenaline junkies will love taking in the sweeping panoramas from the top of the Tokyo Skytree. Shopaholics will find plenty of must-have designer products in Ginza. And for history buffs, Tokyo offers centuries-old temples and shrines to explore."
+    },
+    {
+      "id": 1,
+      "name": "Kyoto",
+      "image": "images/kyoto.jpg",
+      "elevation": 877,
+      "featured": false,
+      "description": "Kyoto is Japan in a nutshell. It’s the cultural and historical heart of the country. It’s the best place in all Japan to experience traditional temples, shrines, gardens, geisha, shops, restaurants and festivals. In short, Kyoto is the most rewarding destination in all of Japan and it should be at the top of any Japan travel itinerary. Indeed, I may be biased, but I’d go so far as to say that Kyoto is the most rewarding single city in all of Asia."
+    },
+    {
+      "id": 2,
+      "name": "Zion National Park",
+      "image": "images/zion.jpg",
+      "elevation": 2901,
+      "featured": false,
+      "description": "With over 229 square-miles, more than 35 hiking trails, cliffs towering more than 2,000 feet above the canyon floor, and more species of plants than the Hawaiian Islands, Zion National Park is a pretty incredible place. It’s an environment of magic and natural fascination that will challenge what you thought of nature’s capabilities. Coming to Zion National Park means living greater, experiencing greater, and being inspired to a greater plane. It also means that you now play a role in keeping the park Forever Mighty, which requires planning ahead and researching how to recreate responsibly."
+    },
+    {
+      "id": 3,
+      "name": "Las Vegas",
+      "image": "images/vegas.jpg",
+      "elevation": 42,
+      "featured": true,
+      "description": "Las Vegas is a large sprawling glitzy city situated in the middle of the high desert surrounded by stark high desert mountains. Words such as surreal, fast-paced and hyper-reality quickly come to mind when describing Las Vegas. Words such as subtle and quiet are not often associated with this city."
+    },
+    {
+      "id": 4,
+      "name": "Grand Canyon",
+      "image": "images/grandCanyon.jpg",
+      "elevation": 42,
+      "featured": false,
+      "description": "One of the Seven Natural Wonders of the World, northern Arizona's Grand Canyon puts the grandiosity of Mother Nature in perspective and serves as a window into the region's geological and cultural past. Among the country's first national parks, the Grand Canyon has long been considered a U.S. treasure  and a very vast one at that. Its immense size leaves many visitors awestruck."
+    },
+    {
+      "id": 5,
+      "name": "Yellowstone",
+      "image": "images/yellowstone.jpg",
+      "elevation": 42,
+      "featured": false,
+      "description": "With dramatic peaks and pristine lakes, Yellowstone National Park is an outdoor enthusiast's paradise. Multicolored pools swirl around hot springs; verdant forests weave past expansive meadows; and volatile geysers launch streams of steaming water toward the sky. With so much unspoiled natural beauty, it's no wonder why everyone suspected John Colter (a scout for explorers Lewis and Clark) was embellishing when he first described Yellowstone's geothermal curiosities in 1807. Nowadays, there's no doubt that the park is indeed extraordinary. While you traverse its 3,000-plus square miles of mountains, canyons, geysers and waterfalls, be prepared to share the trails with permanent residents like buffalo, elk and sometimes even grizzlies. "
+    },
+    {
+      "id": 6,
+      "name": "Bryce Canyon",
+      "image": "images/bryceCanyon.jpg",
+      "elevation": 42,
+      "featured": false,
+      "description": "Red Rocks, Pink Cliffs, and Endless Vistas, Hoodoos (irregular columns of rock) exist on every continent, but here is the largest concentration found anywhere on Earth. Situated along a high plateau at the top of the Grand Staircase, the park's high elevations include numerous life communities, fantastic dark skies, and geological wonders that defy description."
+    },
+    {
+      "id": 7,
+      "name": "Vietnam",
+      "image": "images/vietnam.jpg",
+      "elevation": 42,
+      "featured": false,
+      "description": "A land of staggering natural beauty and cultural complexities, of dynamic megacities and hill-tribe villages, Vietnam is both exotic and compelling."
+    },
+    {
+      "id": 8,
+      "name": "Glacier National Park",
+      "image": "images/glacier.jpg",
+      "elevation": 42,
+      "featured": false,
+      "description": "Snow-capped peaks and azure lakes are just two reasons why Glacier National Park is one of America's most striking parks. There are more than 700 miles of hiking trails in this Montana park, plus 13 designated areas for camping. In winter, travelers can enjoy snowshoeing and skiing, while summer is when vacationers can go swimming and whitewater rafting, among other popular activities. For those who'd rather admire their surroundings from their car, a scenic drive along Going-to-the-Sun Road can't be missed."
+    }
+  ],
+  "comments": [
+    {
+      "id": 0,
+      "destinationId": 0,
+      "rating": 5,
+      "text": "What a magnificent view!",
+      "author": "Tinus Lorvaldes",
+      "date": "2018-10-25T16:30Z"
+    },
+    {
+      "id": 1,
+      "destinationId": 0,
+      "rating": 5,
+      "text": "Speechless!",
+      "author": "Brennen Ech",
+      "date": "2017-06-17T03:33Z"
+    },
+    {
+      "id": 2,
+      "destinationId": 0,
+      "rating": 5,
+      "text": "Undescribable view!",
+      "author": "McKenzie Sebastian",
+      "date": "2019-02-18T18:12Z"
+    },
+    {
+      "id": 3,
+      "destinationId": 1,
+      "rating": 5,
+      "text": "Amazing!",
+      "author": "Jordan Runn",
+      "date": "2019-08-04T20:11Z"
+    },
+    {
+      "id": 4,
+      "destinationId": 1,
+      "rating": 4,
+      "text": "Life time experience",
+      "author": "Ann Dabramov",
+      "date": "2018-07-23T19:44Z"
+    },
+    {
+      "id": 5,
+      "destinationId": 1,
+      "rating": 4,
+      "text": "Wonderful tour and culture",
+      "author": "Brennen Ech",
+      "date": "2017-06-17T03:33Z"
+    },
+    {
+      "id": 6,
+      "destinationId": 2,
+      "rating": 5,
+      "text": "A thrill experience",
+      "author": "McKenzie Sebastian",
+      "date": "2019-02-18T18:12Z"
+    },
+    {
+      "id": 7,
+      "destinationId": 2,
+      "rating": 5,
+      "text": "A wonderful place to reconnect with nature.",
+      "author": "Jordan Runn",
+      "date": "2019-08-04T20:11Z"
+    },
+    {
+      "id": 8,
+      "destinationId": 3,
+      "rating": 4,
+      "text": "Lively city",
+      "author": "Ann Dabramov",
+      "date": "2018-07-23T19:44Z"
+    },
+    {
+      "id": 9,
+      "destinationId": 3,
+      "rating": 5,
+      "text": "Great experience!",
+      "author": "Tinus Lorvaldes",
+      "date": "2018-10-25T16:30Z"
+    },
+    {
+      "id": 10,
+      "destinationId": 4,
+      "rating": 5,
+      "text": "I caught a world-record-breaking trout here on my last visit.",
+      "author": "McKenzie Sebastian",
+      "date": "2019-02-18T18:12Z"
+    },
+    {
+      "id": 11,
+      "destinationId": 4,
+      "rating": 5,
+      "text": "A wonderful place to reconnect with nature.",
+      "author": "Jordan Runn",
+      "date": "2019-08-04T20:11Z"
+    },
+    {
+      "id": 12,
+      "destinationId": 5,
+      "rating": 4,
+      "text": "Simply beautiful",
+      "author": "Ann Dabramov",
+      "date": "2018-07-23T19:44Z"
+    },
+    {
+      "id": 13,
+      "destinationId": 5,
+      "rating": 5,
+      "text": "What a magnificent view!",
+      "author": "Tinus Lorvaldes",
+      "date": "2018-10-25T16:30Z"
+    },
+    {
+      "id": 14,
+      "destinationId": 6,
+      "rating": 4,
+      "text": "Such a beautiful experience",
+      "author": "Brennen Ech",
+      "date": "2017-06-17T03:33Z"
+    },
+    {
+      "id": 15,
+      "destinationId": 6,
+      "rating": 5,
+      "text": "A wonderful place to reconnect with nature.",
+      "author": "Jordan Runn",
+      "date": "2019-08-04T20:11Z"
+    },
+    {
+      "id": 16,
+      "destinationId": 7,
+      "rating": 4,
+      "text": "A wonderful tour visiting the temples and French colonial towns , meeting the local people and tasting their food.",
+      "author": "Ann Dabramov",
+      "date": "2018-07-23T19:44Z"
+    },
+    {
+      "id": 17,
+      "destinationId": 7,
+      "rating": 5,
+      "text": "What a magnificent tour!",
+      "author": "Tinus Lorvaldes",
+      "date": "2018-10-25T16:30Z"
+    },
+    {
+      "id": 18,
+      "destinationId": 8,
+      "rating": 4,
+      "text": "The place was beautiful, but it was cold.",
+      "author": "Brennen Ech",
+      "date": "2017-06-17T03:33Z"
+    },
+    {
+      "id": 19,
+      "destinationId": 8,
+      "rating": 5,
+      "text": "I caught a world-record-breaking view here on my last visit.",
+      "author": "McKenzie Sebastian",
+      "date": "2019-02-18T18:12Z"
+    }
+  ],
+  "partners": [
+    {
+      "id": 0,
+      "location": "Tokyo",
+      "name": "Tokyo to Mt. Fuji Helicopter Tour",
+      "image": "images/tokyo.jpg",
+      "featured": false,
+      "description": "The 90 minute Cross-Country flight to Mt. Fuji takes around 90 minutes for the full length of the trip. The long cruise by the shoreline is often a favorite by many of our clientele.",
+      "price": "$2000"
+    },
+    {
+      "id": 1,
+      "location": "Kyoto",
+      "name": "Synchronized Spirituality: Shinto & Buddhism in Kyoto",
+      "image": "images/kyoto.jpg",
+      "featured": false,
+      "description": "During this three-hour Kyoto Temple Tour we'll explore the Gion District of Kyoto and visit several key Shinto and Buddhist temples with an expert in Japanese history and religion. Along the way, we'll learn about the history, traditions, and rituals of both Shintoism, the native spiritual belief of Japan, and Buddhism, which was imported from China and Central Asia.",
+      "price": "$2000"
+    },
+    {
+      "id": 2,
+      "location": "Zion National Park",
+      "name": "Zion Exploration and UTV Tour",
+      "image": "images/zion.jpg",
+      "featured": false,
+      "description": "Take a thrilling UTV ride followed by a stunning hike in a slot canyon. Explore the backcountry of East Zion, home to world-renowned Slot Canyon formations and incredible views.",
+      "price": "$2000"
+    },
+    {
+      "id": 3,
+      "location": "Las Vegas",
+      "name": "Las Vegas Helicopter",
+      "image": "images/vegas.jpg",
+      "featured": true,
+      "description": "See the bright lights of the Las Vegas Strip and the surrounding region during this nighttime helicopter flight. Soar over this famous stretch of Las Vegas Boulevard with an exclusive sightseeing tour of Sin City’s downtown skyline and beyond.",
+      "price": "$2000"
+    },
+    {
+      "id": 4,
+      "location": "Grand Canyon",
+      "name": "Grand Canyon Helicopter Tour",
+      "image": "images/grandCanyon.jpg",
+      "featured": false,
+      "description": "A helicopter tour gets you away from the crowds for unbeatable views of the canyon.",
+      "price": "$300"
+    },
+    {
+      "id": 5,
+      "location": "Yellowstone",
+      "name": "Yellowstone Snowmobile Tour",
+      "image": "images/yellowstone.jpg",
+      "featured": false,
+      "description": "Experience the thrill that can only come from riding a snowmobile at high speeds through Yellowstone National Park",
+      "price": "$200"
+    },
+    {
+      "id": 6,
+      "location": "Bryce Canyon",
+      "name": "Bryce Canyon Tour",
+      "image": "images/bryceCanyon.jpg",
+      "featured": false,
+      "description": "Experience Bryce Canyon on a hiking tour through this incredible national park. Walk over easy to moderate terrain, and stop at must-see viewpoints to admire the beautiful landscape of Bryce.",
+      "price": "$120"
+    },
+    {
+      "id": 7,
+      "location": "Vietnam",
+      "name": "Custom Vietnam Tour",
+      "image": "images/vietnam.jpg",
+      "featured": true,
+      "description": "Choose our most popular Vietnam tours or Southeast Asia tours including Vietnam below or tailor-make a unique tour based on your interests. Your personal travel consultant will reply in 24 hours with a quote and a detailed itinerary. ",
+      "price": "$3000"
+    },
+    {
+      "id": 8,
+      "location": "Glacier National Park",
+      "name": "Scenic float at Glacier National Park",
+      "image": "images/glacier.jpg",
+      "featured": true,
+      "description": "Take a break from sightseeing and rushing from place to place and spend a few hours floating on the Middle Fork of the Flathead River. This relaxing and rejuventating tour takes place on the boundary to Glacier National Park. ",
+      "price": "$100"
+    }
+  ],
+  "promotions": [
+    {
+      "id": 0,
+      "name": "Japan Adventure",
+      "image": "images/breadcrumb-trail.jpg",
+      "featured": true,
+      "description": "Purchase Japan Private Tour Guides for $1000."
+    }
+  ],
+  "feedback": [
+    {
+      "id": 0,
+      "firstname": "Test",
+      "lastname": "Test",
+      "phoneNum": "12345",
+      "email": "test@test.com",
+      "agree": true,
+      "contactType": "Email",
+      "feedback": "test"
+    }
+  ]
+}
