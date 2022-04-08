@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import { View, FlatList, Text, StyleSheet } from 'react-native';
-import { Tile } from 'react-native-elements';
+import { View, FlatList, Text, StyleSheet, ImageBackground } from 'react-native';
+import { Button } from 'react-native-web';
+//import { Tile } from 'react-native-elements';
 import { connect } from 'react-redux';
 import { baseUrl } from '../shared/baseUrl';
 import Loading from './LoadingComponent';
@@ -21,6 +22,7 @@ class Home extends Component {
 
         const renderDirectoryItem = ({ item }) => {
             return (
+                /*
                 <Tile
                     title={<Text style={styles.label}>{item.name}</Text>}
                     contentContainerStyle={{ height: 40 }}
@@ -28,6 +30,15 @@ class Home extends Component {
                     onPress={() => navigate('DestinationInfo', { destinationId: item.id })}
                     imageSrc={{ uri: baseUrl + item.image }}
                 />
+*/
+                <View style={styles.container}>
+                    <ImageBackground source={{ uri: baseUrl + item.image }} resizeMode="stretch" style={styles.image}>
+                        <Text
+                            onPress={() => navigate('DestinationInfo', { destinationId: item.id })}
+                            style={styles.text}>{item.name}</Text>
+                    </ImageBackground>
+                </View>
+
             );
         };
 
@@ -51,15 +62,25 @@ class Home extends Component {
     }
 }
 const styles = StyleSheet.create({
-
-    label: {
-        color: "white",
-        fontSize: 30,
-        lineHeight: 50,
-        fontWeight: "bold",
-        padding: 10,
-        backgroundColor: '#808080',
-        opacity: 0.7
+    container: {
+        flex: 1,
+    },
+    image: {
+        flex: 1,
+        justifyContent: 'center',
+        width: 'auto',
+        height: 200
+    },
+    text: {
+        color: 'white',
+        fontSize: 25,
+        lineHeight: 40,
+        fontWeight: 'bold',
+        textAlign: 'center',
+        backgroundColor: '#000000c0',
+        marginLeft: 60,
+        marginRight: 60,
+        marginBottom: 160
 
     }
 

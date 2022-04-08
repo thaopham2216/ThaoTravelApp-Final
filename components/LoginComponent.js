@@ -17,7 +17,8 @@ class LoginTab extends Component {
         this.state = {
             username: '',
             password: '',
-            remember: false
+            remember: false,
+            imageUrl: baseUrl + 'images/logo.png'
         };
     }
 
@@ -64,9 +65,17 @@ class LoginTab extends Component {
     render() {
         return (
             <View style={styles.container}>
+                <View style={styles.imageLoginContainer}>
+                    <Image
+                        source={{ uri: this.state.imageUrl }}
+                        loadingIndicatorSource={require('../assets/images/logo.png')}
+                        style={styles.imageLogin}
+                    />
+                </View>
+                    
                 <Input
                     placeholder='Username'
-                    leftIcon={{ type: 'font-awesome', name: 'user-o' }}
+                    leftIcon={{ type: 'font-awesome', name: 'user' }}
                     onChangeText={username => this.setState({ username })}
                     value={this.state.username}
                     containerStyle={styles.formInput}
@@ -74,7 +83,7 @@ class LoginTab extends Component {
                 />
                 <Input
                     placeholder='Password'
-                    leftIcon={{ type: 'font-awesome', name: 'key' }}
+                    leftIcon={{ type: 'font-awesome', name: 'lock' }}
                     onChangeText={password => this.setState({ password })}
                     value={this.state.password}
                     containerStyle={styles.formInput}
@@ -102,22 +111,7 @@ class LoginTab extends Component {
                         buttonStyle={{ backgroundColor: '#008080' }}
                     />
                 </View>
-                <View style={styles.formButton}>
-                    <Button
-                        onPress={() => this.props.navigation.navigate('Register')}
-                        title='Register'
-                        type='clear'
-                        icon={
-                            <Icon
-                                name='user-plus'
-                                type='font-awesome'
-                                color='blue'
-                                iconStyle={{ marginRight: 10 }}
-                            />
-                        }
-                        titleStyle={{ color: 'blue' }}
-                    />
-                </View>
+                
             </View>
         );
     }
@@ -223,47 +217,48 @@ class RegisterTab extends Component {
                             onPress={this.getImageFromGallery}
                         />
                     </View>
-
-                    <Input
-                        placeholder='Username'
-                        leftIcon={{ type: 'font-awesome', name: 'user-o' }}
-                        onChangeText={username => this.setState({ username })}
-                        value={this.state.username}
-                        containerStyle={styles.formInput}
-                        leftIconContainerStyle={styles.formIcon}
-                    />
-                    <Input
-                        placeholder='Password'
-                        leftIcon={{ type: 'font-awesome', name: 'key' }}
-                        onChangeText={password => this.setState({ password })}
-                        value={this.state.password}
-                        containerStyle={styles.formInput}
-                        leftIconContainerStyle={styles.formIcon}
-                    />
-                    <Input
-                        placeholder='First Name'
-                        leftIcon={{ type: 'font-awesome', name: 'user-o' }}
-                        onChangeText={firstname => this.setState({ firstname })}
-                        value={this.state.firstname}
-                        containerStyle={styles.formInput}
-                        leftIconContainerStyle={styles.formIcon}
-                    />
-                    <Input
-                        placeholder='Last Name'
-                        leftIcon={{ type: 'font-awesome', name: 'user-o' }}
-                        onChangeText={lastname => this.setState({ lastname })}
-                        value={this.state.lastname}
-                        containerStyle={styles.formInput}
-                        leftIconContainerStyle={styles.formIcon}
-                    />
-                    <Input
-                        placeholder='Email'
-                        leftIcon={{ type: 'font-awesome', name: 'envelope-o' }}
-                        onChangeText={email => this.setState({ email })}
-                        value={this.state.email}
-                        containerStyle={styles.formInput}
-                        leftIconContainerStyle={styles.formIcon}
-                    />
+                    <View style={styles.formView}>
+                        <Input
+                            placeholder='Username'
+                            leftIcon={{ type: 'font-awesome', name: 'user' }}
+                            onChangeText={username => this.setState({ username })}
+                            value={this.state.username}
+                            containerStyle={styles.formInput}
+                            leftIconContainerStyle={styles.formIcon}
+                        />
+                        <Input
+                            placeholder='Password'
+                            leftIcon={{ type: 'font-awesome', name: 'lock' }}
+                            onChangeText={password => this.setState({ password })}
+                            value={this.state.password}
+                            containerStyle={styles.formInput}
+                            leftIconContainerStyle={styles.formIcon}
+                        />
+                        <Input
+                            placeholder='First Name'
+                            leftIcon={{ type: 'font-awesome', name: 'id-card' }}
+                            onChangeText={firstname => this.setState({ firstname })}
+                            value={this.state.firstname}
+                            containerStyle={styles.formInput}
+                            leftIconContainerStyle={styles.formIcon}
+                        />
+                        <Input
+                            placeholder='Last Name'
+                            leftIcon={{ type: 'font-awesome', name: 'id-card' }}
+                            onChangeText={lastname => this.setState({ lastname })}
+                            value={this.state.lastname}
+                            containerStyle={styles.formInput}
+                            leftIconContainerStyle={styles.formIcon}
+                        />
+                        <Input
+                            placeholder='Email'
+                            leftIcon={{ type: 'font-awesome', name: 'envelope' }}
+                            onChangeText={email => this.setState({ email })}
+                            value={this.state.email}
+                            containerStyle={styles.formInput}
+                            leftIconContainerStyle={styles.formIcon}
+                        />
+                    </View>
                     <CheckBox
                         title='Remember Me'
                         center
@@ -292,7 +287,6 @@ class RegisterTab extends Component {
     }
 
 }
-
 const Login = createBottomTabNavigator(
     {
         Login: LoginTab,
@@ -301,31 +295,43 @@ const Login = createBottomTabNavigator(
     {
         tabBarOptions: {
             activeBackgroundColor: '#008080',
-            inactiveBackgroundColor: '#CEC8FF',
+            inactiveBackgroundColor: '#add8e6',
             activeTintColor: '#fff',
             inactiveTintColor: '#808080',
-            labelStyle: { fontSize: 16 }
-        }
+            labelStyle: { fontSize: 16 },
+            style: {
+                position: 'absolute',
+                bottom: 40,
+                left: 20,
+                right: 20,
+                height: 60, 
+                lineHeight: 20,
+            }
+        },
     }
 );
 
 const styles = StyleSheet.create({
     container: {
         justifyContent: 'center',
-        margin: 20
+        margin: 10, 
+    },
+    formView:{
+        margin: 10, 
+        padding: 10
     },
     formIcon: {
-        marginRight: 10
+        marginRight: 20
     },
     formInput: {
-        padding: 10
+        padding: 5
     },
     formCheckbox: {
         margin: 10,
         backgroundColor: null
     },
     formButton: {
-        margin: 40
+        margin: 10
     },
     imageContainer: {
         flex: 1,
@@ -335,8 +341,20 @@ const styles = StyleSheet.create({
         margin: 10
     },
     image: {
-        width: 60,
-        height: 60
+        width: 70,
+        height: 70
+    },
+    imageLoginContainer: {
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: "center",
+        justifyContent: 'space-evenly',
+        margin: 10
+    },
+    imageLogin: {
+        width: 80,
+        height: 80,
+       
     }
 
 });

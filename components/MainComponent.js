@@ -223,6 +223,8 @@ const HomeEditNavigator = createStackNavigator(
     }
 );
 
+*/
+/*
 const DirectoryEditNavigator = createStackNavigator(
     {
         DirectoryEdit: { screen: DirectoryEdit }
@@ -303,6 +305,7 @@ const MainNavigator = createDrawerNavigator(
         Directory: {
             screen: DirectoryNavigator,
             navigationOptions: {
+                drawerLabel: 'Tour Directory',
                 drawerIcon: ({ tintColor }) => (
                     <Icon
                         name='list'
@@ -369,7 +372,7 @@ const MainNavigator = createDrawerNavigator(
                 )
             }
         },
-        /*
+/*
         //edit
         HomeEdit: {
             screen: HomeEditNavigator,
@@ -385,6 +388,8 @@ const MainNavigator = createDrawerNavigator(
                 )
             }
         },
+    */
+        /*
         DirectoryEdit: {
             screen: DirectoryEditNavigator,
             navigationOptions: {
@@ -406,7 +411,7 @@ const MainNavigator = createDrawerNavigator(
 
     {
         initialRouteName: 'Home',
-        drawerBackgroundColor: '#CEC8FF',
+        drawerBackgroundColor: '#add8e6',
         contentComponent: CustomDrawerContentComponent
     }
 );

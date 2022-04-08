@@ -22,24 +22,22 @@ class DirectoryEdit extends Component {
     }
 
     static navigationOptions = {
-        title: 'Tours Directory'
+        title: 'Tours Information'
     };
 
     render() {
+        const { navigate } = this.props.navigation;
+
         const RenderItemEdit = ({ item }) => {
             return (
-
                 <ScrollView>
                     <Card
                         title={<Text style={styles.label}>{item.name}</Text>}
                         image={{ uri: baseUrl + item.image }}
-                        onPress={() => props.onPress(item.id)}
+                        onPress={() => navigate('TourInfo', { tourId: item.id })}
                     >
                         <Text>{item.description}</Text>
                         <Text style={styles.text}>{item.price}</Text>
-
-
-
                     </Card>
 
                     {/*
