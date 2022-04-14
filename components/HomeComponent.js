@@ -35,7 +35,8 @@ class Home extends Component {
                     <ImageBackground source={{ uri: baseUrl + item.image }} resizeMode="stretch" style={styles.image}>
                         <Text
                             onPress={() => navigate('DestinationInfo', { destinationId: item.id })}
-                            style={styles.text}>{item.name}</Text>
+                            style={styles.text}>{item.name}
+                        </Text>
                     </ImageBackground>
                 </View>
 

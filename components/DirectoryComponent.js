@@ -1,7 +1,7 @@
-//                onPress={() => props.onPress(item.id)}
+// onPress={() => props.onPress(item.id)}
 import React, { Component } from 'react';
-import { View, FlatList, Text, StyleSheet, Button } from 'react-native';
-import { Card, Tile } from 'react-native-elements';
+import { View, FlatList, Text, StyleSheet, Pressable } from 'react-native';
+import { Card } from 'react-native-elements';
 import { ScrollView } from 'react-native-gesture-handler';
 import { connect } from 'react-redux';
 import { baseUrl } from '../shared/baseUrl';
@@ -30,17 +30,40 @@ class DirectoryEdit extends Component {
 
         const RenderItemEdit = ({ item }) => {
             return (
-                <ScrollView>
+                <ScrollView style={styles.container}>
                     <Card
-                        title={<Text style={styles.label}>{item.name}</Text>}
+                        title={item.name}
+                        image={{ uri: baseUrl + item.image }}
+                    >
+                        <Text>
+                            {item.description} {'\n'} {'\n'}
+                            The tour total cost of {item.price}. {'\n'}
+                        </Text>
+                        <Pressable style={styles.button}
+                            accessibilityLabel="Click here to book this tour"
+                            onPress={() => navigate('Reservation')}
+                        >
+                            <Text style={styles.text}>Reserve</Text>
+                        </Pressable>
+                        
+                    </Card>
+                    {/*
+                    <Card
+                        title={item.name}
                         image={{ uri: baseUrl + item.image }}
                         onPress={() => navigate('TourInfo', { tourId: item.id })}
                     >
                         <Text>{item.description}</Text>
                         <Text style={styles.text}>{item.price}</Text>
+                        <Pressable style={styles.button}
+                            accessibilityLabel="Click here to book this tour"
+                            onPress={() => navigate('Reservation')}
+                        >
+                            <Text style={styles.text}>Book this tour</Text>
+                        </Pressable>
                     </Card>
 
-                    {/*
+                    
                     <Tile
                         title={item.name}
                         caption={item.description}
@@ -72,24 +95,30 @@ class DirectoryEdit extends Component {
         );
     }
 }
+
 const styles = StyleSheet.create({
-
-    text: {
-        fontSize: 15,
-        fontWeight: "bold",
-        flex: 1
+    container: {
+        backgroundColor:'#add8e6'
     },
-
-    label: {
-        color: "black",
-        fontSize: 15,
-        lineHeight: 30,
-        fontWeight: "bold",
-        textAlign: "center",
-        backgroundColor: "#dcdcdc",
-        padding: 10
-    }
-
-});
+    button: {
+      alignItems: 'center',
+      justifyContent: 'center',
+      paddingVertical: 12,
+      paddingHorizontal: 25,
+      marginRight: 120,
+      marginLeft: 120,
+      borderRadius: 7,
+      elevation: 3,
+      backgroundColor: '#2f4f4f',
+    },
+    text: {
+      fontSize: 16,
+      lineHeight: 20,
+      fontWeight: 'bold',
+      letterSpacing: 0.25,
+      textAlign: 'justify',
+      color: 'white',
+    },
+  });
 
 export default connect(mapStateToProps)(DirectoryEdit);

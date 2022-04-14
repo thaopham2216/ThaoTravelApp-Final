@@ -243,7 +243,7 @@
       "image": "images/tokyo.jpg",
       "featured": false,
       "description": "The 90 minute Cross-Country flight to Mt. Fuji takes around 90 minutes for the full length of the trip. The long cruise by the shoreline is often a favorite by many of our clientele.",
-      "price": "$2000"
+      "price": "$1000"
     },
     {
       "id": 1,
@@ -252,7 +252,7 @@
       "image": "images/kyoto.jpg",
       "featured": false,
       "description": "During this three-hour Kyoto Temple Tour we'll explore the Gion District of Kyoto and visit several key Shinto and Buddhist temples with an expert in Japanese history and religion. Along the way, we'll learn about the history, traditions, and rituals of both Shintoism, the native spiritual belief of Japan, and Buddhism, which was imported from China and Central Asia.",
-      "price": "$2000"
+      "price": "$1500"
     },
     {
       "id": 2,
@@ -261,7 +261,7 @@
       "image": "images/zion.jpg",
       "featured": false,
       "description": "Take a thrilling UTV ride followed by a stunning hike in a slot canyon. Explore the backcountry of East Zion, home to world-renowned Slot Canyon formations and incredible views.",
-      "price": "$2000"
+      "price": "$800"
     },
     {
       "id": 3,
@@ -270,7 +270,7 @@
       "image": "images/vegas.jpg",
       "featured": true,
       "description": "See the bright lights of the Las Vegas Strip and the surrounding region during this nighttime helicopter flight. Soar over this famous stretch of Las Vegas Boulevard with an exclusive sightseeing tour of Sin City’s downtown skyline and beyond.",
-      "price": "$2000"
+      "price": "$400"
     },
     {
       "id": 4,

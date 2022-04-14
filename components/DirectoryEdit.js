@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, FlatList, Text, StyleSheet, Button } from 'react-native';
+import { View, FlatList, Text, StyleSheet, Button, Pressable } from 'react-native';
 import { Card, Tile } from 'react-native-elements';
 import { ScrollView } from 'react-native-gesture-handler';
 import { connect } from 'react-redux';
@@ -53,6 +53,7 @@ class DirectoryEdit extends Component {
     };
 
     render() {
+        const { navigate } = this.props.navigation;
         const RenderItemEdit = ({ item }) => {
             return (
                 <ScrollView>
@@ -61,9 +62,15 @@ class DirectoryEdit extends Component {
                         image={{ uri: baseUrl + item.image }}
                     >
                         <Text>
-                            {item.description}
-                            {item.price}
+                            `$ {item.description} The tour cost total of {item.price}.`
                         </Text>
+                        <Pressable style={styles.button}
+                            accessibilityLabel="Click here to book this tour"
+                            onPress={() => navigate('Reservation')}
+                        >
+                            <Text style={styles.text}>Book this tour</Text>
+                        </Pressable>
+                        
                     </Card>
 
                     {/*
@@ -98,5 +105,26 @@ class DirectoryEdit extends Component {
         );
     }
 }
+
+const styles = StyleSheet.create({
+    button: {
+      alignItems: 'center',
+      justifyContent: 'center',
+      paddingVertical: 12,
+      paddingHorizontal: 25,
+      marginRight: 80,
+      marginLeft: 80,
+      borderRadius: 7,
+      elevation: 3,
+      backgroundColor: '#2f4f4f',
+    },
+    text: {
+      fontSize: 16,
+      lineHeight: 21,
+      fontWeight: 'bold',
+      letterSpacing: 0.25,
+      color: 'white',
+    },
+  });
 
 export default connect(mapStateToProps)(DirectoryEdit);

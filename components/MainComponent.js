@@ -4,7 +4,7 @@ import Directory from './DirectoryComponent';
 import DestinationInfo from './DestinationInfo';
 import Tour from './ToursComponent';
 import Contact from './ContactComponent';
-import { View, Platform, StyleSheet, Text, ScrollView, Image } from 'react-native';
+import { View, Platform, StyleSheet, Text, ScrollView, Image, Button} from 'react-native';
 import SafeAreaView from 'react-native-safe-area-view';
 import Constants from 'expo-constants';
 import { createStackNavigator } from 'react-navigation-stack';
@@ -248,10 +248,10 @@ const DirectoryEditNavigator = createStackNavigator(
     }
 );
 
-
+*/
 //edit stop 
 
-*/
+
 
 const CustomDrawerContentComponent = props => (
     <ScrollView>
@@ -330,6 +330,7 @@ const MainNavigator = createDrawerNavigator(
                 )
             }
         },
+        /*
         Tour: {
             screen: TourNavigator,
             navigationOptions: {
@@ -344,6 +345,7 @@ const MainNavigator = createDrawerNavigator(
                 )
             }
         },
+        */
         Reservation: {
             screen: ReservationNavigator,
             navigationOptions: {
@@ -389,7 +391,7 @@ const MainNavigator = createDrawerNavigator(
             }
         },
     */
-        /*
+    /*
         DirectoryEdit: {
             screen: DirectoryEditNavigator,
             navigationOptions: {
